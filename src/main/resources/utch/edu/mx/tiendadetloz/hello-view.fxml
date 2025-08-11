@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utch.edu.mx.tiendadetloz.HelloController">
+    <children>
+        <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Tienda de Zelda" />
+
+        <Label fx:id="rupeesLabel" style="-fx-font-size: 14px;" text="Rupias: 1000" />
+
+        <Label text="Items disponibles:" />
+        <ListView fx:id="itemsList" onMouseClicked="#onItemSelected" prefHeight="300.0" />
+
+        <HBox spacing="10.0">
+            <children>
+                <Button fx:id="buyButton" onAction="#onBuyClick" text="Comprar Item" />
+                <Button fx:id="sellButton" onAction="#onSellClick" text="Vender Item" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
